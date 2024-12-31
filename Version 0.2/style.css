@@ -1,0 +1,25 @@
+    body {
+    background-color: #00394a;
+    color: white;
+    a {
+        color: rgb(154, 238, 255);
+    }
+}
+
+/*#content {
+
+}*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #002834;
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+

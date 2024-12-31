@@ -1,0 +1,45 @@
+    body {
+    background-color: #00394a;
+    color: white;
+    a {
+        color: rgb(154, 238, 255);
+    }
+}
+
+/*#content {
+
+}*/
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #002834;
+    text-align: center;
+    padding: 10px 1;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+
+img {
+    max-width: 20%;
+    max-height: 20%;
+}
+
+.container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+   }
+
+
+.picture {
+    text-align: center;
+    img {
+        max-width: 80%;
+        max-height: 80%;
+        border-radius: 10px;
+        border: 5px solid;
+    }
+}
