@@ -1,6 +1,14 @@
+window.addEventListener('DOMContentLoaded', function() {
+    adjustFooterPosition();
+});
+
 window.addEventListener('resize', function() {
     adjustFooterPosition();
 });
+
+window.addEventListener('reset', function() {
+    adjustFooterPosition();
+})
 
 function adjustFooterPosition() {
     var windowHeight = window.innerHeight;
@@ -13,6 +21,3 @@ function adjustFooterPosition() {
         document.querySelector('.footer').style.position = 'fixed';
     }
 }
-
-// Call the function initially
-adjustFooterPosition();
