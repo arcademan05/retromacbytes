@@ -4,9 +4,13 @@
         <meta charset="UTF-8">
         <title>Japanese Practce 日本語の練習</title>
         <link rel="stylesheet" href="../style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../logo.png">
+        <script src="../main.js"></script>
     </head>
 
     <body>
+        <!--Labels-->
+
         <label for = "AnswerBox"></label>
         <label for = "Submit"></label>
         <label for = "Feedback"></label>
@@ -15,9 +19,16 @@
         <label for = "Finished"></label>
         <label for = "Statistics"></label>
 
-        <h1>Japanese Grammar and Vocabulary Help</h1>
+        <!--Hyperlinks to other pages on site-->
+
+        <a href="../index.html">Home</a>
+        <a href="../games/index.html">My Videogame</a>
+        <a href="../japanese/index.html">Japanese Practice</a>
         <hr>
-        <br>
+
+        <!--Beginning Web Content-->
+
+        <h1>Japanese Grammar and Vocabulary Help</h1>
         <p id = "Question"></p>
         <input id = "AnswerBox">
         <input type = "button" value="Go" id = "Submit">
@@ -26,9 +37,22 @@
         <button id = "Finished">Finished</button>
         <p id = "Feedback"></p>
         <p id = "Statistics"></p>
-        <p>Version 0.1 beta</p>
-        <p>&copy; 2025 - Retro Mac Bytes, All Rights Reserved</p>
 
+        <hr>
+        <h4>Lastest Changes/Improvements 09/10/2025</h4>
+        <p>I added compatibility with upper and lower case answers, removed bugs, optimized code.</p>
+        <p>My next steps will be to add code to make it where you don't have to refresh the page every time you want a new word.</p>
+
+        <div class="footer">
+            <hr>
+            <p>Version 0.2 beta</p>
+            <p>&copy; 2025 - Retro Mac Bytes, All Rights Reserved</p>
+        </div>
+
+        <!--End Web Content-->
+
+        <!--Import script for main logic-->
         <script src="main.js"></script>
+
     </body>
 </html>

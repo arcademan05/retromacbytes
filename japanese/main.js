@@ -37,7 +37,7 @@ document.getElementById("Question").textContent = "What does " + all_L3_verbs_jp
 // When an element with id = "button" is clicked, following code is executed
 function buttonClicked() {
     // Gets value inputed into the textbox and stores it
-    textbox = document.getElementById("AnswerBox").value;
+    textbox = document.getElementById("AnswerBox").value.trim().toLowerCase();
 
     /*
     // Debugging commands
@@ -46,30 +46,81 @@ function buttonClicked() {
     */
 
     // Code checking for multiple definitions of a word
-    var z = all_L3_verbs_eng[y].length;
-    if (typeof all_L3_verbs_eng[y] == "string") {
+    if (typeof all_L3_verbs_eng[y] === "string") {
         if (textbox == all_L3_verbs_eng[y]) {
             document.getElementById("Feedback").textContent = "You wrote " + textbox + ". This is correct!";
             console.log("Correct!");
-           } else if (textbox != all_L3_verbs_eng[x]) {
+           } else {
             document.getElementById("Feedback").textContent = "You wrote " + textbox + ". This is incorrect. Try again. You can do it!!!";
             console.log("Incorrect :(");
-           } else {
+           } 
+           // Debugging code.
+           /*else {
             document.getElementById("Feedback").textContent = "There was a fucky wucky in your code. Get better >:D";
             console.log("Fucky Wucky!");
-           }
+           }*/
     } else {
+        var z = all_L3_verbs_eng[y].length;
         for (let i = 0; i != z; i++) {
             if (textbox != all_L3_verbs_eng[y][i]) {
                 continue;
             } else {
                 console.log("Correct!");
-                document.getElementById("Feedback").textContent = "You wrote " + textbox + ". This is correct! There are other definitions for this word too, so try to remember those as well!";
+                document.getElementById("Feedback").textContent = "You wrote " + textbox + 
+                ". This is correct! There are other definitions for this word too, so try to remember those as well!";
                 return;
             }
         }
-        console.log("You're going the right direction.");
+        //Debug Command
+        //console.log("You're going the right direction.");
         document.getElementById("Feedback").textContent = "You wrote " + textbox + ". This is incorrect. Try again. You can do it!!!";
     }
 }
 
+/*
+function generateQuestion() {
+    x = all_L3_verbs_jpns.length;
+    y = Math.floor(Math.random() * x);
+    document.getElementById("Question").textContent = "What does " + all_L3_verbs_jpns[y] + " mean?";
+}
+*/
+
+/*
+function buttonClicked() {
+    let textbox = document.getElementById("AnswerBox").value;
+    let userInput = textbox.trim().toLowerCase();
+
+    let correctAnswer = all_L3_verbs_eng[y];
+
+    if (typeof correctAnswer === "string") {
+        if (userInput === correctAnswer.toLowerCase()) {
+            document.getElementById("Feedback").textContent = `You wrote "${textbox}". This is correct!`;
+            console.log("Correct!");
+            generateQuestion(); // Optional: go to next question
+        } else {
+            document.getElementById("Feedback").textContent = `You wrote "${textbox}". This is incorrect. Try again!`;
+            console.log("Incorrect :(");
+        }
+    } else if (Array.isArray(correctAnswer)) {
+        let isCorrect = false;
+        for (let i = 0; i < correctAnswer.length; i++) {
+            if (userInput === correctAnswer[i].toLowerCase()) {
+                isCorrect = true;
+                break;
+            }
+        }
+
+        if (isCorrect) {
+            document.getElementById("Feedback").textContent = `You wrote "${textbox}". This is correct! There are other meanings too, so try to remember them!`;
+            console.log("Correct!");
+            generateQuestion(); // Optional
+        } else {
+            document.getElementById("Feedback").textContent = `You wrote "${textbox}". This is incorrect. Try again!`;
+            console.log("Incorrect");
+        }
+    } else {
+        console.log("Something went wrong with the data.");
+        document.getElementById("Feedback").textContent = "Unexpected error.";
+    }
+}
+*/
