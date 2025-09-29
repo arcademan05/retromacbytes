@@ -10,10 +10,14 @@ window.addEventListener('reset', function() {
     adjustFooterPosition();
 })
 
+var windowHeight;
+var contentHeight;
+var footerHeight;
+
 function adjustFooterPosition() {
-    var windowHeight = window.innerHeight;
-    var contentHeight = document.getElementById('content').offsetHeight;
-    var footerHeight = document.querySelector('.footer').offsetHeight;
+    windowHeight = window.innerHeight;
+    contentHeight = document.getElementById('content').offsetHeight;
+    footerHeight = document.querySelector('.footer').offsetHeight;
 
     if ((contentHeight + footerHeight) >= windowHeight) {
         document.querySelector('.footer').style.position = 'static';
