@@ -156,12 +156,12 @@ function goButtonClicked() {
     if (typeof all_L3_verbs_eng[y] === "string") {
         if (textbox == all_L3_verbs_eng[y]) {
             // Is correct
-            feedback.textContent = `You wrote "${textboxUnchanged}. This is correct!`;
+            feedback.textContent = `You wrote "${textboxUnchanged}". This is correct!`;
 
             console.log("Correct!");
            } else {
             // Is incorrect
-            feedback.textContent = `You wrote "${textboxUnchanged}. This is incorrect. Try again. You can do it!!!`;
+            feedback.textContent = `You wrote "${textboxUnchanged}". This is incorrect. Try again. You can do it!!!`;
             incorrect_jpns.push(all_L3_verbs_jpns[y]);
             incorrect_eng.push(all_L3_verbs_eng[y]);
             console.log("Incorrect :(");
