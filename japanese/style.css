@@ -1,0 +1,32 @@
+body {
+    /*    
+    position: relative; //or absolute, fixed, sticky
+    z-index: 100; // A higher value will bring it to the front
+    background-image: url(Fox_Lady.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;*/
+
+    background-color: #00394a;
+    color: white;
+    a {
+         color: rgb(154, 238, 255);
+    }
+    
+}
+
+/*#content {
+
+}*/
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #002834;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 100;
+    position: fixed;
+}
+
+

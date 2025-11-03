@@ -3,24 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Japanese Practce 日本語の練習</title>
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" type="image/x-icon" href="../logo.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
-        <div id = "content">
-            <!--Labels-->
-
-            <label for = "AnswerBox"></label>
-            <label for = "Submit"></label>
-            <label for = "Feedback"></label>
-            <label for = "Question"></label>
-            <label for = "Next"></label>
-            <label for = "Finished"></label>
-            <label for = "Statistics"></label>
-            <label for = "Start"></label>
-
+        <div id="content">
             <!--Hyperlinks to other pages on site-->
 
             <a href="../index.html">Home</a>
@@ -31,26 +20,113 @@
             <!--Beginning Web Content-->
 
             <h1>Japanese Grammar and Vocabulary Practice</h1>
-            <p id = "Question">Welcome to the Japanese practice page. You will be asked the meaning of a Japanese word and your job is to type the English meaning into the text box. Press 'Go' or simply press 'Enter' on your keyboard to submit your answer.
+            <p id="Question">Welcome to the Japanese practice page. You will be asked the meaning of a Japanese word and your job is to type the English meaning into the text box. Press 'Go' or simply press 'Enter' on your keyboard to submit your answer.
                 You will then be told wether your answer is right or wrong. You can either try again, or move onto the next question. Your missed questions and the correct translations will be displayed at the end of the quiz so you will know what to study.
                 <br>Press 'Start' to begin. Good Luck!
             </p>
-            <button id = "Start">Start</button>
+
+            <p class="hide_aft_startpress">Translate to/from:</p>
+            <table class="hide_aft_startpress">
+                <tr>
+                    <td>Japanese</td>
+                    <td><input type="checkbox" id="Eng_to_Jpns">&lt;==<br><input type="checkbox" id="Jpns_to_Eng">==&gt;</td>
+                    <td>&nbsp;English</td>
+                </tr>
+            </table>
+            <p class="hide_aft_startpress">Type of Vocab:</p>
+            <table class="hide_aft_startpress">
+                <tr>
+                    <td><input type="checkbox" id="nouns">Nouns</td>
+                    <td><input type="checkbox" id="い-adjectives">い-adjectives</td>
+                    <td><input type="checkbox" id="う-verbs">う-verbs</td>
+                    <td><input type="checkbox" id="adverbs/other">Adverbs/Other</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" id="な-adjectives">な-adjectives</td>
+                    <td><input type="checkbox" id="る-verbs">る-verbs</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="irregular_verbs">Irregular verbs</td>
+                </tr>
+            </table>
+            <p class="hide_aft_startpress">Lessons:</p>
+            <table class="hide_aft_startpress">
+                <tr>
+                    <td><input type="checkbox" id="all_Lessons">All</td>
+                    <td><input type="checkbox" id="L1_vocab">L1</td>
+                    <td><input type="checkbox" id="L2_vocab">L2</td>
+                    <td><input type="checkbox" id="L3_vocab">L3</td>
+                    <td><input type="checkbox" id="L4_vocab">L4</td>
+                    <td><input type="checkbox" id="L5_vocab">L5</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="L6_vocab">L6</td>
+                    <td><input type="checkbox" id="L7_vocab">L7</td>
+                    <td><input type="checkbox" id="L8_vocab">L8</td>
+                    <td><input type="checkbox" id="L9_vocab">L9</td>
+                    <td><input type="checkbox" id="L10_vocab">L10</td>
+                    <td><input type="checkbox" id="L11_vocab">L11</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="L12_vocab">L12</td>
+                    <td><input type="checkbox" id="L13_vocab">L13</td>
+                    <td><input type="checkbox" id="L14_vocab">L14</td>
+                    <td><input type="checkbox" id="L15_vocab">L15</td>
+                    <td><input type="checkbox" id="L16_vocab">L16</td>
+                    <td><input type="checkbox" id="L17_vocab">L17</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="L18_vocab">L18</td>
+                    <td><input type="checkbox" id="L19_vocab">L19</td>
+                    <td><input type="checkbox" id="L20_vocab">L20</td>
+                    <td><input type="checkbox" id="L21_vocab">L21</td>
+                    <td><input type="checkbox" id="L22_vocab">L22</td>
+                    <td><input type="checkbox" id="L23_vocab">L23</td>
+                </tr>
+            </table>
+
             <br>
-            <input id = "AnswerBox">
-            <input type = "button" value="Go" id = "Submit">
+            <button id="Start">Start</button>
             <br>
             <br>
-            <button id = "Finished">Finished</button>
-            <button id = "Next">Next</button>
-            <p id = "Feedback"></p>
-            <p id = "Statistics"></p>
+            <input id="AnswerBox" hidden>
+            <input type="button" value="Go" id="Submit" hidden>
+            <br>
+            <br>
+            <button id="Finished" hidden>Finished</button>
+            <button id="Next" hidden>Next</button>
+            <p id="Feedback"></p>
+            <p id="Statistics"></p>
+            <table id="displayIncorrect" hidden>
+                <tr>
+                    <td>Word/Phrase:&emsp;</td>
+                    <td>Meaning:</td>
+                </tr>
+            </table>
 
             <hr>
             <p>If you find that this webpage has been beneficial to you and you happen to know me irl, I'd be very appreciative if you would be willing to slip me your spare change every now and then if you happen to have any. Hosting a website like this costs
                 some money, so any donations will help me cover those costs.</p>
             <h3>Latest Changes/Improvements</h3>
             <br>
+            <h4>11/02/2025</h4>
+            <ul>
+                <li>UI changes</li>
+                <li>You can now choose whether you want to translate from Japanese to English, English to Japanese, or Both.</li>
+                <li>You can now select which vocabulary you want to include in you practice.</li>
+                <li>You can now select which lesson you to practice vocabulary from.</li>
+                <li>Added quiz statistics which displayes at the end of the quiz.</li>
+                <li>Added a list of incorrect words which displayes at the end of the quiz.</li>
+                <li>Cleaned up code and made it prettier.</li>
+            </ul>
+            <p>As of now there is only vocabulary for the Lesson 3 verbs and all of Lesson 14. I will add the vocabulary from other lessons throughout the week/s, prioritizing the latest material and working my way backwards. 
+                I haven't added the vocabulary yet because I was prioritizing getting the logic for the code functionable (I wrote like 550 lines of code this weekend and my brain is fried). Now that that's done, I will focus on the vocabulary.
+                For words with multiple meanings or kanji equivilent, all equivilent meanings will be displayed in the question prompt or incorrect answers list at the end. This will be fixed later. I will add more practice options for using kanji later. 
+                I'm going to start to focus on making the webpage pretty looking soon. Although I've done a lot of debuging, I may not have gotten everything. So if you notice anything weird, don't hesitate to let me know. Thank you and happy studies!
+            </p>
             <h4>10/04/2025 -</h4>
             <ul>
                 <li>User Interface changes</li>
@@ -75,7 +151,7 @@
 
         <div class="footer">
             <hr>
-            <p>Version 0.3 beta</p>
+            <p>Version 0.4 beta</p>
             <p>&copy; 2025 - Retro Mac Bytes, All Rights Reserved</p>
         </div>
 
