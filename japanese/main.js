@@ -435,23 +435,23 @@ const L16_adverbs_etc_eng = ["temp"];
 const L16_all_vocab = [[L16_nouns_jpns,L16_nouns_eng],[L16_i_adjectives_jpns,L16_i_adjectives_eng],[L16_na_adjectives_jpns,L16_na_adjectives_eng],[L16_u_verbs_jpns,L16_u_verbs_eng],[L16_ru_verbs_jpns,L16_ru_verbs_eng],[L16_ireg_verbs_jpns,L16_ireg_verbs_eng],[L16_adverbs_etc_jpns,L16_adverbs_etc_eng]];
 
 // L17 Vocabulary
-const L17_nouns_jpns = ["temp"];
-const L17_nouns_eng = ["temp"];
+const L17_nouns_jpns = [["あかちゃん","赤ちゃん"],["おきゃくさん","お客さん"],["しゅしょう","首相"],"サラリーマン",["きゅうりょう","給料"],["ざんぎょう","残業"],"パンダ",["コンタクト","コンタクトレンズ"],"ひげ","ブーツ",["かぎ","鍵"],["たからくじ","宝くじ"],["かみ","紙"],"スプーン",["おゆ","お湯"],["でんしレンジ","電子レンジ"],"ヒーター","ニュース",["かじ","火事"],["りょこうがいしゃ","旅行会社"],"ショッピングモール",["りょう","寮"],["ちがい","違い"],["ひみつ","秘密"],["じゅんび","準備"],["じぶん","自分"]];
+const L17_nouns_eng = ["baby",["guest","visitor","client","customer"],"prime minister",["salaryman","office worker"],"salary","overtime work","panda","contact lenses","beard","boots",["lock","key"],"lottery","paper","spoon","hot water","microwave oven","heater","news","fire","travel agency","shopping mall","dormitory","difference","secret","preparation","oneself"];
 
-const L17_i_adjectives_jpns = ["temp"];
-const L17_i_adjectives_eng = ["temp"];
-const L17_na_adjectives_jpns = ["temp"];
-const L17_na_adjectives_eng = ["temp"];
+const L17_i_adjectives_jpns = [["あぶない","危ない"],"うらやましい",["すくない","少ない"],["つごうがわるい","都合が悪い"],"つよい"];
+const L17_i_adjectives_eng = ["dangerous","envious",["a little","a few"],["inconvienient","to have a scheduling conflict"],"strong"];
+const L17_na_adjectives_jpns = [["さいあくな","最悪"]];
+const L17_na_adjectives_eng = ["the worst"];
 
-const L17_u_verbs_jpns = ["temp"];
-const L17_u_verbs_eng = ["temp"];
-const L17_ru_verbs_jpns = ["temp"];
-const L17_ru_verbs_eng = ["temp"];
-const L17_ireg_verbs_jpns = ["temp"];
-const L17_ireg_verbs_eng = ["temp"];
+const L17_u_verbs_jpns = [["えらぶ","選ぶ"],["おゆをわかす","お湯を沸かす"],["かみをとかす","髪をとかす"],"ひげをそる",["ぬぐ","脱ぐ"],["こむ","混む"],["たからくじにあたる","宝くじに当たる"]];
+const L17_u_verbs_eng = [["to choose","to select"],"to boil water","to comb one's hair","to shave one's beard","to take off clothes","to get crowded","to win a lottery"];
+const L17_ru_verbs_jpns = ["いれる",["うまれる","生まれる"],["かぎをかける","鍵をかける"],["たりる","足りる"],["なれる","慣れる"]];
+const L17_ru_verbs_eng = [["to make tea","to make coffee"],"to be born","to lock",["to be sufficient","to be enough"],"to get used to"];
+const L17_ireg_verbs_jpns = [["おいのりする","お祈りする"],["けしょうする","化粧する"],["しゅうしょくする","就職する"],["りこんする","離婚する"],"する"];
+const L17_ireg_verbs_eng = ["to pray","to put makeup on","to get a full-time job at","to get a divorce","to wear small items"];
 
-const L17_adverbs_etc_jpns = ["temp"];
-const L17_adverbs_etc_eng = ["temp"];
+const L17_adverbs_etc_jpns = ["ずいぶん",["たとえば","例えば"],["～にくらべて","～に比べて"],"～によると",["まえ","前"],"やっぱり","～かなあ","そうか","おめでとうございます"];
+const L17_adverbs_etc_eng = ["very","for example","compared with","according to","before","after all","i wonder","i see","congratulations"];
 
 const L17_all_vocab = [[L17_nouns_jpns,L17_nouns_eng],[L17_i_adjectives_jpns,L17_i_adjectives_eng],[L17_na_adjectives_jpns,L17_na_adjectives_eng],[L17_u_verbs_jpns,L17_u_verbs_eng],[L17_ru_verbs_jpns,L17_ru_verbs_eng],[L17_ireg_verbs_jpns,L17_ireg_verbs_eng],[L17_adverbs_etc_jpns,L17_adverbs_etc_eng]];
 
