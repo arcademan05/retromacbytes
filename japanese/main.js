@@ -1,10 +1,11 @@
 /*
 AUTHOR: retromacbytes.net owner
 CREATED ON: 09/09/2025
-EDITED ON: 11/02/2025
+EDITED ON: 11/10/2025
 PURPOSE: A js program to provide functionality to my Japanese language practice webpage.
 */
 
+// CONSIDER HAVEING A SEPARATE FILE WITH JUST THE VOCABULARY
 
 // Lets me know the program has started
 console.log("Program Started");
@@ -284,153 +285,149 @@ const L9_adverbs_etc_eng = ["temp"];
 const L9_all_vocab = [[L9_nouns_jpns,L9_nouns_eng],[L9_i_adjectives_jpns,L9_i_adjectives_eng],[L9_na_adjectives_jpns,L9_na_adjectives_eng],[L9_u_verbs_jpns,L9_u_verbs_eng],[L9_ru_verbs_jpns,L9_ru_verbs_eng],[L9_ireg_verbs_jpns,L9_ireg_verbs_eng],[L9_adverbs_etc_jpns,L9_adverbs_etc_eng]];
 
 // L10 Vocabulary
-const L10_nouns_jpns = ["temp"];
-const L10_nouns_eng = ["temp"];
+const L10_nouns_jpns = [["きせつ","季節"],["はる","春"],["あき","秋"],["ぎゅうにゅう","牛乳"],"ケーキ","すし",["てんぷら","天ぷら"],"りんご",["りょうり","料理"],"サッカー",["やきゅう","野球"],["いしゃ","医者"],["おかねもち","お金持ち"],["ゆうめいじん","有名人"],["かお","顔"],["としうえ","年上"],["えき","駅"],["しんかんせん","新幹線"],["ちかてつ","地下鉄"],["ふね","船"],["ひこうき","飛行機"],["よやく","予約"],"ツアー",["どうぶつえん","動物園"],["じかん","時間"],["せかい","世界"],["びよういん","美容院"],["てぶくろ","手袋"],["せいかつ","生活"],["ことし","今年"]];
+const L10_nouns_eng = ["season","spring","fall","milk","cake","sushi","tempura","apple",["cooking","cuisine"],"soccer","baseball","doctor","rich person","cleebrity","face","someone older","station",["Shinkansen","Bullet Train"],"subway",["ship","boat"],"airplane","reservation","tour","zoo","time","world","beauty parlor","gloves",["life","living"],"this year"];
 
-const L10_i_adjectives_jpns = ["temp"];
-const L10_i_adjectives_eng = ["temp"];
-const L10_na_adjectives_jpns = ["temp"];
-const L10_na_adjectives_eng = ["temp"];
+const L10_i_adjectives_jpns = [["あたたかい","暖かい"],["すずしい","涼しい"],["つめたい","冷たい"],["おそい","遅い"],["ねむい","眠い"]];
+const L10_i_adjectives_eng = ["warm","cold weather",["cold things","cold person","cold people"],["slow","late"],"sleepy"];
+const L10_na_adjectives_jpns = [["かんたんな","簡単な"]];
+const L10_na_adjectives_eng = [["easy","simple"]];
 
-const L10_u_verbs_jpns = ["temp"];
-const L10_u_verbs_eng = ["temp"];
-const L10_ru_verbs_jpns = ["temp"];
-const L10_ru_verbs_eng = ["temp"];
-const L10_ireg_verbs_jpns = ["temp"];
-const L10_ireg_verbs_eng = ["temp"];
+const L10_u_verbs_jpns = ["かかる",["とまる","泊まる"],"なる"];
+const L10_u_verbs_eng = [["to take amount of time","to take amount of money"],"to stay at a hotel","to become"];
+const L10_ru_verbs_jpns = [["きめる","決める"]];
+const L10_ru_verbs_eng = ["to decide"];
+const L10_ireg_verbs_jpns = ["ごろごろする",["りょこうする","旅行する"],["れんしゅうする","練習する"]];
+const L10_ireg_verbs_eng = [["to chill out at home","to stay home and do nothing"],"to travel","to practice"];
 
-const L10_adverbs_etc_jpns = ["temp"];
-const L10_adverbs_etc_eng = ["temp"];
+const L10_adverbs_etc_jpns = [["いちばん","一番"],["どっち","どちら"],["はやく","早く","速く"],["あるいて","歩いて"],"～で","どうやって","どのぐらい",["～しゅうかん","～週間"],["～かげつ","～か月"],["～ねん","～年"],"このごろ",["～ご","～後"],"～か～"];
+const L10_adverbs_etc_eng = ["best","which",["do something early","do something fast"],"on foot",["by means of transportation","with a tool"],["how","by what means"],["how much","how long"],"for weeks","for months","years","these days",["in time","after"],"or"];
 
 const L10_all_vocab = [[L10_nouns_jpns,L10_nouns_eng],[L10_i_adjectives_jpns,L10_i_adjectives_eng],[L10_na_adjectives_jpns,L10_na_adjectives_eng],[L10_u_verbs_jpns,L10_u_verbs_eng],[L10_ru_verbs_jpns,L10_ru_verbs_eng],[L10_ireg_verbs_jpns,L10_ireg_verbs_eng],[L10_adverbs_etc_jpns,L10_adverbs_etc_eng]];
 
 // L11 Vocabulary
-const L11_nouns_jpns = ["temp"];
-const L11_nouns_eng = ["temp"];
+const L11_nouns_jpns = [["がいこく","外国"],"オーストラリア",["かわ","川"],["おんせん","温泉"],"つり",["みずうみ","湖"],["やま","山"],"キャンプ","ドライブ",["じんじゃ","神社"],["びじゅつかん","美術館"],["しゃちょう","社長"],["かしゅ","歌手"],"ルームメイト","ホストファミリー",["しょうらい","将来"],["ゆめ","夢"],["おまつり","お祭り"],["おしょうがつ","お正月"],["おかし","お菓子"],"ビール","おもちゃ",["こんがっき","今学期"],["らいがっき","来学期"],["じゅぎょう","授業"],"こちら",["さっか","作家"],"ジャーナリスト",["けいさつかん","警察官"],["しょうぼうし","消防士"],["きょうし","教師"],["けんきゅうしゃ","研究者"],["うちゅうひこうし","宇宙飛行士"],["スポーツせんしゅ","スポーツ選手"],["だいとうりょう","大統領"],["はいゆう","俳優"],["かんごし","看護師"],"シェフ",["まんがか","漫画家"]];
+const L11_nouns_eng = ["foreign country","Austrailia","river",["spa","hot spring"],"fishing","lake","mountain","camp","drive","shrine","art museum","president of a company","singer","roommate","host family","future","dream","festival","New Year's",["snacks","drinks"],"beer","toy","this semester","next semester","class",["this person","this person (polite)"],"writer","journalist","police officer","firefighter","schoolteacher","researcher","astronaut","athlete","president of a country",["actor","actress"],"nurse","chef","cartoonist"];
 
-const L11_i_adjectives_jpns = ["temp"];
-const L11_i_adjectives_eng = ["temp"];
-const L11_na_adjectives_jpns = ["temp"];
-const L11_na_adjectives_eng = ["temp"];
+const L11_i_adjectives_jpns = [];
+const L11_i_adjectives_eng = [];
+const L11_na_adjectives_jpns = [];
+const L11_na_adjectives_eng = [];
 
-const L11_u_verbs_jpns = ["temp"];
-const L11_u_verbs_eng = ["temp"];
-const L11_ru_verbs_jpns = ["temp"];
-const L11_ru_verbs_eng = ["temp"];
-const L11_ireg_verbs_jpns = ["temp"];
-const L11_ireg_verbs_eng = ["temp"];
+const L11_u_verbs_jpns = ["うそをつく","おなかがすく",["かう","飼う"],"サボる",["とる","取る"],["ならう","習う"],["のぼる","登る"],["はしる","走る"]];
+const L11_u_verbs_eng = ["to tell a lie","to become hungry","to own a pet","to cut classes",["to take a class","to get a grade"],"to learn","to climb","to run"];
+const L11_ru_verbs_jpns = [["つかれる","疲れる"],"やめる"];
+const L11_ru_verbs_eng = ["to get tired","to quit"];
+const L11_ireg_verbs_jpns = ["けんかする",["しょうかいする","紹介する"],"ダイエットする",["ちこくする","遅刻する"],["りゅうがくする","留学する"]];
+const L11_ireg_verbs_eng = [["to have a fight","to quarrel"],"to introduce","to go on a diet","to be late for an appointment","to study abroad"];
 
-const L11_adverbs_etc_jpns = ["temp"];
-const L11_adverbs_etc_eng = ["temp"];
+const L11_adverbs_etc_jpns = [["しゅっしん","出身"],["ひさしぶり","久しぶり"],"まあまあ","もっと",["あと","後"],"そして","～だけ",["～てん","～点"]];
+const L11_adverbs_etc_eng = ["coming from","it has been a long time",["okay","so-so"],"more","after an event","and then",["just","only"],"points"];
 
 const L11_all_vocab = [[L11_nouns_jpns,L11_nouns_eng],[L11_i_adjectives_jpns,L11_i_adjectives_eng],[L11_na_adjectives_jpns,L11_na_adjectives_eng],[L11_u_verbs_jpns,L11_u_verbs_eng],[L11_ru_verbs_jpns,L11_ru_verbs_eng],[L11_ireg_verbs_jpns,L11_ireg_verbs_eng],[L11_adverbs_etc_jpns,L11_adverbs_etc_eng]];
 
 // L12 Vocabulary
-const L12_nouns_jpns = ["temp"];
-const L12_nouns_eng = ["temp"];
+const L12_nouns_jpns = ["おなか",["あし","足"],["のど","喉"],["は","歯"],"インフルエンザ",["かぜ","風邪"],"せき",["ふつかよい","二日酔い"],"ホームシック","アレルギー","ジュース",["たまご","卵"],["ふく","服"],["もの","物"],"プレゼント",["きっぷ","切符"],["～だい","～代"],["ようじ","用事"],["おてあらい","お手洗い"],["しあい","試合"],["せいじ","政治"],["せいせき","成績"],["かのじょ","彼女"],["かれ","彼"],["かれし","彼氏"],["いみ","意味"]];
+const L12_nouns_eng = ["stomach",["leg","foot"],"throat","tooth",["influenza","flu"],"cold","cough","hangover","homesickness","allergy","juice","egg","cloths","thing","present",["train ticket","ticket"],["charge","fee"],"business to take care of","restroom",["match","game"],"politics","grade",["she","girlfriend"],["he","boyfriend"],"boyfriend","meaning"];
 
-const L12_i_adjectives_jpns = ["temp"];
-const L12_i_adjectives_eng = ["temp"];
-const L12_na_adjectives_jpns = ["temp"];
-const L12_na_adjectives_eng = ["temp"];
+const L12_i_adjectives_jpns = [["せまい","狭い"],["ひろい","広い"],["わるい","悪い"],["いたい","痛い"],["あまい","甘い"],["おおい","多い"]];
+const L12_i_adjectives_eng = [["narrow","not spacious"],["wide","spacious"],"bad",["hurt","painful"],"sweet","there are many"];
+const L12_na_adjectives_jpns = [["すてきな","素敵な"]];
+const L12_na_adjectives_eng = ["nice"];
 
-const L12_u_verbs_jpns = ["temp"];
-const L12_u_verbs_eng = ["temp"];
-const L12_ru_verbs_jpns = ["temp"];
-const L12_ru_verbs_eng = ["temp"];
-const L12_ireg_verbs_jpns = ["temp"];
-const L12_ireg_verbs_eng = ["temp"];
+const L12_u_verbs_jpns = [["あるく","歩く"],["かぜをひく","風邪をひく"],["ねつがある","熱がある"],["のどがかわく","喉が渇く"],["はらう","払う"],"なくす",["きょうみがある","興味がある"]];
+const L12_u_verbs_eng = ["to walk","to catch a cold","to have a feaver","to become thirsty","to pay","to lose",["to be interested in","to be interested"]];
+const L12_ru_verbs_jpns = [["せきがでる","せきが出る"],["わかれる","別れる"]];
+const L12_ru_verbs_eng = ["to cough",["to break up","to separate"]];
+const L12_ireg_verbs_jpns = [["きんちょうする","緊張する"],["しんぱいする","心配する"]];
+const L12_ireg_verbs_eng = ["to get nervous","to worry"];
 
-const L12_adverbs_etc_jpns = ["temp"];
-const L12_adverbs_etc_eng = ["temp"];
+const L12_adverbs_etc_jpns = [["おだいじに","お大事に"],["げんきがない","元気がない"],"できるだけ",["たぶん","多分"],"もうすぐ",["はじめて","初めて"],["にさんにち","二三日"],"それに",["おなじ","同じ"]];
+const L12_adverbs_etc_eng = ["Get well soon","don't look well","as much as possible",["probably","maybe"],["very soon","in a few moments","in a few days"],"for the first time","for two to three days","moreover","same"];
 
 const L12_all_vocab = [[L12_nouns_jpns,L12_nouns_eng],[L12_i_adjectives_jpns,L12_i_adjectives_eng],[L12_na_adjectives_jpns,L12_na_adjectives_eng],[L12_u_verbs_jpns,L12_u_verbs_eng],[L12_ru_verbs_jpns,L12_ru_verbs_eng],[L12_ireg_verbs_jpns,L12_ireg_verbs_eng],[L12_adverbs_etc_jpns,L12_adverbs_etc_eng]];
 
 // L13 Vocabulary
-const L13_nouns_jpns = ["temp"];
-const L13_nouns_eng = ["temp"];
+const L13_nouns_jpns = [["おとな","大人"],["べんごし","弁護士"],["わたくし","私"],"カレー",["こうちゃ","紅茶"],["きもの","着物"],"セーター",["がっき","楽器"],["からて","空手"],"ゴルフ","バイク",["ぞう","象"],["からだ","体"],["がいこくご","外国語"],["ことば","言葉"],["ぶんぽう","文法"],"アプリ","アパート","マンション",["くうこう","空港"],["みせ","店"],["ぶっか","物価"],["こうこく","広告"],["ぼしゅう","募集"],["やくそく","約束"]];
+const L13_nouns_eng = ["adult","lawyer",["I","I (formal)"],"curry","black tea",["kimono","Japanese traditional dress"],"sweater","musical instrument","karate","golf","motorcycle","elephant","body","foreign language","language","grammar","application",["apartment","smaller apartment building"],["larger apartment building","condominium"],"airport",["shop","store"],"consumer prices","advertisement","recruitment",["promise","appointment"]];
 
-const L13_i_adjectives_jpns = ["temp"];
-const L13_i_adjectives_eng = ["temp"];
-const L13_na_adjectives_jpns = ["temp"];
-const L13_na_adjectives_eng = ["temp"];
+const L13_i_adjectives_jpns = ["うれしい",["かなしい","悲しい"],["きびしい","厳しい"],["きぶんがわるい","気分が悪い"],["からい","辛い"],"すごい",["ちかい","近い"]];
+const L13_i_adjectives_eng = ["glad","sad","strict","to feel sick",["hot and spicy","salty"],["incredible","awesome"],["close","near"]];
+const L13_na_adjectives_jpns = ["いろいろな",["しあわせな","幸せな"],"だめな"];
+const L13_na_adjectives_eng = [["various","different kinds of"],["happy","lasting happiness"],"no good"];
 
-const L13_u_verbs_jpns = ["temp"];
-const L13_u_verbs_eng = ["temp"];
-const L13_ru_verbs_jpns = ["temp"];
-const L13_ru_verbs_eng = ["temp"];
-const L13_ireg_verbs_jpns = ["temp"];
-const L13_ireg_verbs_eng = ["temp"];
+const L13_u_verbs_jpns = [["あむ","編む"],["がんばる","頑張る"],["なく","泣く"],["みがく","磨く"],["やくそくをまもる","やくそくをまもる"]];
+const L13_u_verbs_eng = ["to knit",["to do one's best","to try hard"],"to cry",["to brush teeth","to polish"],"to keep a promise"];
+const L13_ru_verbs_jpns = [];
+const L13_ru_verbs_eng = [];
+const L13_ireg_verbs_jpns = [["かんどうする","感動する"]];
+const L13_ireg_verbs_eng = [["to be moved by","to be touched by"]];
 
-const L13_adverbs_etc_jpns = ["temp"];
-const L13_adverbs_etc_eng = ["temp"];
+const L13_adverbs_etc_jpns = [["～かい","～回"],"～キロ",["ぜんぶ","全部"],["～ともうします","～と申します"],["とくに","特に"],["いちにち","一日"],["ふつか","二日"],["みっか","三日"],["よっか","四日"],["いつか","五日"],["むいか","六日"],["なのか","七日"],["ようか","八日"],["ここのか","九日"],["とおか","十日"]];
+const L13_adverbs_etc_eng = ["times",["kilometers","kilograms"],"all","my name is","especially","one day","two days","three days","four days","five days","six days","seven days","eight days","nine days","ten days"];
 
 const L13_all_vocab = [[L13_nouns_jpns,L13_nouns_eng],[L13_i_adjectives_jpns,L13_i_adjectives_eng],[L13_na_adjectives_jpns,L13_na_adjectives_eng],[L13_u_verbs_jpns,L13_u_verbs_eng],[L13_ru_verbs_jpns,L13_ru_verbs_eng],[L13_ireg_verbs_jpns,L13_ireg_verbs_eng],[L13_adverbs_etc_jpns,L13_adverbs_etc_eng]];
 
 // L14 Vocabulary
-const L14_nouns_jpns = ["おくさん", "ごしゅじん", "パートナー", "おじさん", "おばさん", "りょうしん", "おおやさん", "みなさん", "チョコレート", "みかん", "トレーナー", "シャツ", "ネクタイ", "マフラー", "ゆびわ", "えんぴつ", "ぬいぐるみ", "まんが", "けしょうひん", "ラジオ",
-    "おさら", "おかえし", "りれきしょ", "クリスマス", "バレンタインデー", "ホワイトデー"];
-const L14_nouns_eng = ["wife", "husband", "partner", ["uncle", "middle-aged man"], ["aunt", "middle-aged woman"], "parents", ["landlord", "landlady"], ["everyone", "all of you"], "chocolate", "mandarin orange", "sweatshirt", "shirt", "necktie", "winter scarf",
-    "ring", "pencil", "stuffed animal", "comic book", "cosmetics", "radio", ["plate", "dish"], "return", "resume", "christmas", "valentine's day", "white day"];
+const L14_nouns_jpns = [["おくさん","奥さんが"],["ごしゅじん","ご主人"],"パートナー","おじさん","おばさん",["りょうしん","両親"],["おおやさん","大家さん"],["みなさん","皆さん"],"チョコレート","みかん","トレーナー","シャツ","ネクタイ","マフラー",["ゆびわ","指輪"],["えんぴつ","鉛筆"],"ぬいぐるみ",["まんが","漫画"],["けしょうひん","化粧品"],"ラジオ",["おさら","お皿"],["おかえし","お返し"],["りれきしょ","履歴書"],"クリスマス","バレンタインデー","ホワイトデー"];
+const L14_nouns_eng = ["wife","husband","partner",["uncle","middle-aged man"],["aunt", "middle-aged woman"],"parents",["landlord","landlady"],["everyone","all of you"],"chocolate","mandarin orange","sweatshirt","shirt","necktie","winter scarf","ring","pencil","stuffed animal","comic book","cosmetics","radio",["plate","dish"],"return","resume","christmas","valentine's day","white day"];
 
-const L14_i_adjectives_jpns = ["ほしい"];
+const L14_i_adjectives_jpns = [["ほしい","欲しい"]];
 const L14_i_adjectives_eng = ["to want"];
-const L14_na_adjectives_jpns = ["おしゃれ(な)", "けち(な)"];
-const L14_na_adjectives_eng = [["fashionable", "stylish"], ["stingy", "cheap"]];
+const L14_na_adjectives_jpns = ["おしゃれな","けちな"];
+const L14_na_adjectives_eng = [["fashionable","stylish"],["stingy","cheap"]];
 
-const L14_u_verbs_jpns = ["おくる", "にあう"];
-const L14_u_verbs_eng = ["to send", "to look good"];
-const L14_ru_verbs_jpns = ["あきらめる", "あげる", "くれる", "できる"];
-const L14_ru_verbs_eng = ["to give up", "to give others", "to give me", ["to come into existance", "to be made"]];
-const L14_ireg_verbs_jpns = ["そうだんする", "ちゅういする", "プロポーズする"];
-const L14_ireg_verbs_eng = ["to consult", ["to give warning", "to watch out"], "to propose marriage"];
+const L14_u_verbs_jpns = [["おくる","送る"],["にあう","似合う"]];
+const L14_u_verbs_eng = ["to send","to look good on somebody"];
+const L14_ru_verbs_jpns = ["あきらめる","あげる","くれる","できる"];
+const L14_ru_verbs_eng = ["to give up","to give others","to give me",["to come into existance","to be made"]];
+const L14_ireg_verbs_jpns = [["そうだんする","相談する"],["ちゅういする","注意する"],"プロポーズする"];
+const L14_ireg_verbs_eng = ["to consult",["to give warning","to watch out"],"to propose marriage"];
 
-const L14_adverbs_etc_jpns = ["~くん", "~たち", "わたしたち", "こんな~", "きゅうに", "ちょうど", "よく", "さあ", "どうしたらいい"];
-const L14_adverbs_etc_eng = [["mr.", "ms."], "plural", "we", ["like this", "this kind of"], "suddenly", "exactly", "well", "i am not sure", "what should one do"];
-const L14_counters_jpns = ["~こ", "~さつ", "～だい", "～ひき", "～ほん"];
-const L14_counters_eng = ["small items", "bound volumes", "equipment", "small animals", "long objects"];
+const L14_adverbs_etc_jpns = [["～くん","～君"],"～たち",["わたしたち","私たち"],["こんな～","こんな"],["きゅうに","急に"],"ちょうど","よく","さあ","どうしたらいい",["～こ","～個"],["～さつ","～冊"],["～だい","～台"],["～ひき","～匹"],["～ほん","～本"]];
+const L14_adverbs_etc_eng = [["Mr.","Ms."],["plural","makes a noun plural"],"we",["like this","this kind of"],"suddenly","exactly","well","I am not sure","what should one do","small items","bound volumes","equipment","small animals","long objects"];
 
 const L14_all_vocab = [[L14_nouns_jpns,L14_nouns_eng],[L14_i_adjectives_jpns,L14_i_adjectives_eng],[L14_na_adjectives_jpns,L14_na_adjectives_eng],[L14_u_verbs_jpns,L14_u_verbs_eng],[L14_ru_verbs_jpns,L14_ru_verbs_eng],[L14_ireg_verbs_jpns,L14_ireg_verbs_eng],[L14_adverbs_etc_jpns,L14_adverbs_etc_eng]];
 
 // L15 Vocabulary
-const L15_nouns_jpns = ["temp"];
-const L15_nouns_eng = ["temp"];
+const L15_nouns_jpns = [["がいこくじん","外国人"],"そば",["え","絵"],["ちず","地図"],["じしょ","辞書"],["かぐ","家具"],["でんち","電池"],"ジャケット","ペット",["わりびきけん","割引券"],["インターネット","ネット"],["じしん","地震"],["ほけん","保険"],["ぜいきん","税金"],["きょうしつ","教室"],["たてもの","建物"],"プール",["えいがかん","映画館"],["りょかん","旅館"],["にわ","庭"],"ボランティア",["かつどう","活動"],["けいけん","経験"],["しゅうかん","習慣"],["しめきり","締め切り"],["よてい","予定"],["そつぎょうしき","卒業式"],["けっこんしき","結婚式"]];
+const L15_nouns_eng = ["foreigner",["soba","Japanese buckwheat noodles"],["painting","picture","drawing"],"map","dictionary","furniture","battery","jacket","pet","discount coupon","internet","earthquake","insurance","tax","classroom","building","swimming pool","movie theater","Japanese inn","garden","volunteer","activity","experience","custom","deadline",["schedual","plan"],"graduation ceremony","wedding"];
 
-const L15_i_adjectives_jpns = ["temp"];
-const L15_i_adjectives_eng = ["temp"];
-const L15_na_adjectives_jpns = ["temp"];
-const L15_na_adjectives_eng = ["temp"];
+const L15_i_adjectives_jpns = [];
+const L15_i_adjectives_eng = [];
+const L15_na_adjectives_jpns = [];
+const L15_na_adjectives_eng = [];
 
-const L15_u_verbs_jpns = ["temp"];
-const L15_u_verbs_eng = ["temp"];
-const L15_ru_verbs_jpns = ["temp"];
-const L15_ru_verbs_eng = ["temp"];
-const L15_ireg_verbs_jpns = ["temp"];
-const L15_ireg_verbs_eng = ["temp"];
+const L15_u_verbs_jpns = [["うる","売る"],["おろす","下ろす"],["かく","描く"],["さがす","探す"],["さそう","誘う"],"しゃべる",["つきあう","付き合う"],["つく","着く"],["ほけんにはいる","保険に入る"]];
+const L15_u_verbs_eng = ["to sell","to withdraw money",["to draw","to paint"],"to look for","to invite","to chat",["to date someone","to keep company"],"to arrive","to buy insurance"];
+const L15_ru_verbs_jpns = [["きをつける","気をつける"],["しらべる","調べる"],["みえる","見える"]];
+const L15_ru_verbs_eng = [["to be cautious","to be careful"],"to look into a matter","to be visible"];
+const L15_ireg_verbs_jpns = ["する",["かんこうする","観光する"],["よやくする","予約する"],["さんかする","参加する"],["そつぎょうする","卒業する"],["はっぴょうする","発表する"]];
+const L15_ireg_verbs_eng = ["to decide on an item","to do sightseeing","to reserve","to participate","to graduate from",["to make a presentation","to make public"]];
 
-const L15_adverbs_etc_jpns = ["temp"];
-const L15_adverbs_etc_eng = ["temp"];
+const L15_adverbs_etc_jpns = ["～けど",["～め","～目"],["いちにちめ","一日目"],["いちにちじゅう","一日中"],["さいきん","最近"],["もういちど","もう一度"],["たのしみです","楽しみです"]];
+const L15_adverbs_etc_eng = [["but","so"],"-th","first day","all day long","recently","one more time",["cannot wait","to look forward to it"]];
 
 const L15_all_vocab = [[L15_nouns_jpns,L15_nouns_eng],[L15_i_adjectives_jpns,L15_i_adjectives_eng],[L15_na_adjectives_jpns,L15_na_adjectives_eng],[L15_u_verbs_jpns,L15_u_verbs_eng],[L15_ru_verbs_jpns,L15_ru_verbs_eng],[L15_ireg_verbs_jpns,L15_ireg_verbs_eng],[L15_adverbs_etc_jpns,L15_adverbs_etc_eng]];
 
 // L16 Vocabulary
-const L16_nouns_jpns = ["temp"];
-const L16_nouns_eng = ["temp"];
+const L16_nouns_jpns = [["えきいん","えきいんさん","駅員","駅員さん"],["おや","親"],["しんせき","親せき"],"ごみ",["さとう","砂糖"],"ファイル",["おおきさ","大きさ"],["みち","道"],["きまつしけん","期末試験"],["けんきゅう","研究"],["だいがくいん","大学院"],["しょうがくきん","奨学金"],["すいせんじょう","推薦状"],["たいふう","台風"],["ぶんか","文化"],["へんじ","返事"],["ひ","日"]];
+const L16_nouns_eng = ["station attendant","parent","relatives","garbage","sugar",["folder","file folder","portfolio","file"],"size",["way","road","directions"],"final examination","research","graduate school","scholarship","letter of recommendation","typhoon","culture","reply","day"];
 
-const L16_i_adjectives_jpns = ["temp"];
-const L16_i_adjectives_eng = ["temp"];
-const L16_na_adjectives_jpns = ["temp"];
-const L16_na_adjectives_eng = ["temp"];
+const L16_i_adjectives_jpns = [["きたない","汚い"]];
+const L16_i_adjectives_eng = ["dirty"];
+const L16_na_adjectives_jpns = [];
+const L16_na_adjectives_eng = [];
 
-const L16_u_verbs_jpns = ["temp"];
-const L16_u_verbs_eng = ["temp"];
-const L16_ru_verbs_jpns = ["temp"];
-const L16_ru_verbs_eng = ["temp"];
-const L16_ireg_verbs_jpns = ["temp"];
-const L16_ireg_verbs_eng = ["temp"];
+const L16_u_verbs_jpns = [["おこす","起こす"],"おごる",["わらう","笑う"],["おちこむ","落ち込む"],["こまる","困る"],["だす","出す"],["なおす","直す"],["みつかる","見つかる"],["やくす","訳す"],["かす","貸す"],["つれていく","連れていく"],["みちにまよう","道に迷う"],["むかえにいく","迎えに行く"]];
+const L16_u_verbs_eng = ["to wake someone up","to treat someone to a meal","to laugh","to get depressed","to have difficulty",["to take something out","to hand in something"],["to correct","to fix"],"to be found","to translate","to lend","to take someone to a place",["to become lost","to lose one's way"],"to go to pick up"];
+const L16_ru_verbs_jpns = [["あつめる","集める"],["いれる","入れる"],["みせる","見せる"],["のりおくれる","乗り遅れる"],"アイロンをかける"];
+const L16_ru_verbs_eng = ["to collect","to put something in","to show",["to miss a train","to miss a bus"],"to iron cloths"];
+const L16_ireg_verbs_jpns = [["あさねぼうする","朝寝坊する"],["あんないする","案内する"],["せつめいする","説明する"],["むかえにくる","迎えに来る"]];
+const L16_ireg_verbs_eng = ["to oversleep","to show someone around","to explain","to come to pick up"];
 
-const L16_adverbs_etc_jpns = ["temp"];
-const L16_adverbs_etc_eng = ["temp"];
+const L16_adverbs_etc_jpns = [["きょうじゅうに","今日中に"],["じゅぎょうちゅうに","授業中に"],["このあいだ","この間"],"これから","このぐらい",["じぶんで","自分で"],["ほかの","他の"],"ええと",["じつは","実は"],["～いがい","～以外"],"ごめん",["しつれいします","失礼します"]];
+const L16_adverbs_etc_eng = ["by the end of the day",["in class","during the class"],"the other day","from now on","about this much","do something by oneself","other",["well","let me see"],["actually","in fact"],"other than","I'm sorry",["Excuse me","Sorry to interrupt you"]];
 
 const L16_all_vocab = [[L16_nouns_jpns,L16_nouns_eng],[L16_i_adjectives_jpns,L16_i_adjectives_eng],[L16_na_adjectives_jpns,L16_na_adjectives_eng],[L16_u_verbs_jpns,L16_u_verbs_eng],[L16_ru_verbs_jpns,L16_ru_verbs_eng],[L16_ireg_verbs_jpns,L16_ireg_verbs_eng],[L16_adverbs_etc_jpns,L16_adverbs_etc_eng]];
 
@@ -451,7 +448,7 @@ const L17_ireg_verbs_jpns = [["おいのりする","お祈りする"],["けし�
 const L17_ireg_verbs_eng = ["to pray","to put makeup on","to get a full-time job at","to get a divorce","to wear small items"];
 
 const L17_adverbs_etc_jpns = ["ずいぶん",["たとえば","例えば"],["～にくらべて","～に比べて"],"～によると",["まえ","前"],"やっぱり","～かなあ","そうか","おめでとうございます"];
-const L17_adverbs_etc_eng = ["very","for example","compared with","according to","before","after all","i wonder","i see","congratulations"];
+const L17_adverbs_etc_eng = ["very","for example","compared with","according to","before","after all","I wonder","I see","congratulations"];
 
 const L17_all_vocab = [[L17_nouns_jpns,L17_nouns_eng],[L17_i_adjectives_jpns,L17_i_adjectives_eng],[L17_na_adjectives_jpns,L17_na_adjectives_eng],[L17_u_verbs_jpns,L17_u_verbs_eng],[L17_ru_verbs_jpns,L17_ru_verbs_eng],[L17_ireg_verbs_jpns,L17_ireg_verbs_eng],[L17_adverbs_etc_jpns,L17_adverbs_etc_eng]];
 
@@ -760,6 +757,11 @@ function startButtonClicked () {
         }
     }
 
+    // Checks if there are words in the list, other wise exits fuction.
+    if (question_words.length == 0) {
+        feedback.textContent = "There is no such vocabulary for the selected lesson/s. Not all lessons have all vocabulary types. Please select 'Start' when you have resolved this by selecting another vocabulary type for the selected lessons/s or another lesson with the desired vocabulary type.";
+        return;
+    }
     // Sets up correctWrongStats();
     totalQuestions = question_words.length;
 
