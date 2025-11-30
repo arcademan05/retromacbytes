@@ -1,7 +1,7 @@
 /*
 AUTHOR: retromacbytes.net owner
 CREATED ON: 09/09/2025
-EDITED ON: 11/18/2025
+EDITED ON: 11/29/2025
 PURPOSE: A js program to provide functionality to my Japanese language practice webpage.
 */
 
@@ -111,8 +111,8 @@ const L1_ru_verbs_eng = [];
 const L1_ireg_verbs_jpns = [];
 const L1_ireg_verbs_eng = [];
 
-const L1_adverbs_etc_jpns = [["～ねんせい","～年生"],"～さん",["～じん","～人"],["～じ","～時"],["～ご","～語"],["～さい","～歳"],["～ばん","～番"],"あのう","はい","そうです","そうですか",["おはよう","お早う"],["おはようございます","お早うございます"],["こんばんは","今晩は"],"さようなら",["おやすみ","お休み","おやすみなさい","お休みなさい"],["ありがとう","有難う"],["ありがとうございます","有難うございます"],["すみません","済みません"],"いいえ",["いってきます","行ってきます"],["いってらっしゃい","行ってらっしゃい"],["ただいま","只今"],["おかえり","お帰り","おかえりなさい","お帰りなさい"],["いただきます","頂きます"],["ごちそうさま","ご馳走様","ごちそうさまでした","ご馳走様でした"],["はじめまして","初めまして"],"～です",["よろしくおねがいします","宜しくお願いします"]];
-const L1_adverbs_etc_eng = ["year student",["Mr.","Ms."],"people","o'clock","language","years old","number","um","yes","That's right",["I see.","Is that so?"],"Good morning",["Good morning (polite)","Good morning. (polite)"],"Good afternoon","Good evening",["Good bye","Good-bye"],"Good night","Thank you",["Thank you (polite)","Thank you. (polite)"],["Excuse me","I'm sorry"],["No","Not at all"],"I'll go and come back","Please go and come back","I'm home","Welcome home",["Thank you for the meal (before eating)","Thank you for the meal. (before eating)"],["Thank you for the meal (after eating)","Thank you for the meal. (after eating)"],"How do you do","I am"<"Nice to meet you"];
+const L1_adverbs_etc_jpns = [["～ねんせい","～年生"],"～さん",["～じん","～人"],["～じ","～時"],["～ご","～語"],["～さい","～歳"],["～ばん","～番"],"あのう","はい","そうです","そうですか",["おはよう","お早う"],["おはようございます","お早うございます"],["こんにちは","今日は"],["こんばんは","今晩は"],"さようなら",["おやすみ","お休み","おやすみなさい","お休みなさい"],["ありがとう","有難う"],["ありがとうございます","有難うございます"],["すみません","済みません"],"いいえ",["いってきます","行ってきます"],["いってらっしゃい","行ってらっしゃい"],["ただいま","只今"],["おかえり","お帰り","おかえりなさい","お帰りなさい"],["いただきます","頂きます"],["ごちそうさま","ご馳走様","ごちそうさまでした","ご馳走様でした"],["はじめまして","初めまして"],"～です",["よろしくおねがいします","宜しくお願いします"]];
+const L1_adverbs_etc_eng = ["year student",["Mr.","Ms."],"people","o'clock","language","years old","number","um","yes","That's right",["I see.","Is that so?"],"Good morning",["Good morning (polite)","Good morning. (polite)"],"Good afternoon","Good evening",["Good bye","Good-bye"],"Good night","Thank you",["Thank you (polite)","Thank you. (polite)"],["Excuse me","I'm sorry"],["No","Not at all"],"I'll go and come back","Please go and come back","I'm home","Welcome home",["Thank you for the meal (before eating)","Thank you for the meal. (before eating)"],["Thank you for the meal (after eating)","Thank you for the meal. (after eating)"],"How do you do","I am","Nice to meet you"];
 
 const L1_all_vocab = [[L1_nouns_jpns,L1_nouns_eng],[L1_i_adjectives_jpns,L1_i_adjectives_eng],[L1_na_adjectives_jpns,L1_na_adjectives_eng],[L1_u_verbs_jpns,L1_u_verbs_eng],[L1_ru_verbs_jpns,L1_ru_verbs_eng],[L1_ireg_verbs_jpns,L1_ireg_verbs_eng],[L1_adverbs_etc_jpns,L1_adverbs_etc_eng]];
 
