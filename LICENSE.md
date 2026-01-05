@@ -1,5 +1,5 @@
 retromacbytes – Proprietary License  
-Copyright © 2025 retromacbytes. All rights reserved.
+Copyright © 2025-2026 retromacbytes. All rights reserved.
 
 Permission is granted to any individual to view, download, and use the source code and related materials contained in this repository solely for personal, non-commercial purposes.
 
